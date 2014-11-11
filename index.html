@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
+<!--[if IE 6 ]><html class="ie ie6"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8"><![endif]-->
+
+    <head>
+        <title>Labelizr Demo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <style type="text/css">
+            .container {
+                max-width:990px;
+                margin:auto;
+            }
+            #output {
+                position: fixed;
+                background: #eee;
+                top: 5px;
+                right: 5px;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="dimensionator.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(function() {
+                $(window).on('resize', function(){
+                    $('#output').html(
+                        'body width: <br>' +
+                        'jquery: ' + $('body').width() + '<br>' +
+                        'dimensionator: ' + $('body').dim('w') + '<br>'
+                    );
+                }).trigger('resize');
+            });
+        </script>
+    </head>
+    <body>
+        <div id="output"></div>
+        <div class="container">
+            <h1>Demo</h1>
+            <p>On some browsers if you measure an element you will get a width that exludes the scrollbar, this is especially bad if you need to have responsive breakpoints in the javascript, dimensionator fixes this by providing you with a way to measure the container width in a consistent fashion.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis at ipsum quis tincidunt. Curabitur ac dictum eros. Sed sapien sem, aliquet at velit et, aliquet imperdiet tellus. Mauris sollicitudin erat neque. Fusce facilisis in ligula ac pharetra. Nulla porttitor diam nunc, ut commodo urna bibendum sit amet. Aliquam quis massa blandit, venenatis quam eget, pretium libero. Praesent et ex eros. Integer ut euismod quam.</p>
+            <p>In ac arcu vitae lectus varius convallis sed id enim. Aenean egestas lorem ut enim euismod congue. Sed vel viverra massa. Integer gravida interdum nulla, in venenatis augue tempus in. Sed molestie viverra vulputate. Maecenas efficitur feugiat risus vel fringilla. Integer ultricies, tellus et rhoncus feugiat, orci dui pharetra leo, vitae ultricies neque ipsum eget metus. Nam varius elit vel aliquam porttitor. Donec tincidunt augue eu tortor pulvinar consequat a sed ex. Sed a rhoncus odio. Ut lacinia, felis eget rhoncus blandit, lorem tellus aliquet magna, vitae feugiat eros magna non ligula.</p>
+            <p>Etiam vel pretium est. Duis placerat congue mi, a ultricies turpis semper vel. Quisque aliquet tellus eget nulla sodales, et maximus libero semper. In facilisis sapien in ex bibendum hendrerit. Vivamus blandit lobortis odio eget bibendum. Integer in ante semper, ornare enim in, pellentesque dolor. Donec lacinia luctus neque, non lobortis diam malesuada id. Sed id justo nec urna dignissim ultricies. Sed suscipit arcu at nunc viverra efficitur. Etiam ac neque id ante consequat lacinia lobortis eget mauris. Nunc nibh metus, mollis vitae nunc fermentum, facilisis dapibus eros. Sed id ante et nulla condimentum vestibulum. Duis in pulvinar orci.</p>
+            <p>Curabitur semper et augue at laoreet. Phasellus molestie pretium orci quis efficitur. Quisque nisi neque, rutrum non justo vel, aliquam efficitur lacus. Nullam id ornare ex, rutrum porttitor magna. Proin feugiat nibh non lectus facilisis posuere. Ut rhoncus magna id neque pharetra, ac pulvinar justo congue. Duis ac nibh quam. Praesent non urna vestibulum, egestas ipsum at, blandit augue. Donec tincidunt sed velit vitae eleifend. Vestibulum eu malesuada neque.</p>
+            <p>Donec in blandit lectus. Aliquam dictum, ligula id rutrum interdum, quam risus vehicula mi, id pellentesque nulla lectus viverra lectus. In mauris arcu, dignissim eu quam in, sodales vulputate nisi. Suspendisse sed dui et nibh suscipit sagittis. Duis in mattis justo. Etiam ut eros vel massa bibendum posuere. Fusce lacinia diam nibh, id mollis arcu auctor dignissim. Aliquam convallis maximus ex ut efficitur. Donec egestas ultricies tortor, pretium rhoncus massa egestas ut. In sit amet urna at ex maximus accumsan eget in lectus. Phasellus sit amet neque interdum, condimentum risus vitae, malesuada mauris. Mauris nec aliquet urna. Pellentesque ex turpis, laoreet eu vulputate a, rhoncus quis nisl. Ut ut leo sit amet lacus fermentum blandit. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis at ipsum quis tincidunt. Curabitur ac dictum eros. Sed sapien sem, aliquet at velit et, aliquet imperdiet tellus. Mauris sollicitudin erat neque. Fusce facilisis in ligula ac pharetra. Nulla porttitor diam nunc, ut commodo urna bibendum sit amet. Aliquam quis massa blandit, venenatis quam eget, pretium libero. Praesent et ex eros. Integer ut euismod quam.</p>
+            <p>In ac arcu vitae lectus varius convallis sed id enim. Aenean egestas lorem ut enim euismod congue. Sed vel viverra massa. Integer gravida interdum nulla, in venenatis augue tempus in. Sed molestie viverra vulputate. Maecenas efficitur feugiat risus vel fringilla. Integer ultricies, tellus et rhoncus feugiat, orci dui pharetra leo, vitae ultricies neque ipsum eget metus. Nam varius elit vel aliquam porttitor. Donec tincidunt augue eu tortor pulvinar consequat a sed ex. Sed a rhoncus odio. Ut lacinia, felis eget rhoncus blandit, lorem tellus aliquet magna, vitae feugiat eros magna non ligula.</p>
+            <p>Etiam vel pretium est. Duis placerat congue mi, a ultricies turpis semper vel. Quisque aliquet tellus eget nulla sodales, et maximus libero semper. In facilisis sapien in ex bibendum hendrerit. Vivamus blandit lobortis odio eget bibendum. Integer in ante semper, ornare enim in, pellentesque dolor. Donec lacinia luctus neque, non lobortis diam malesuada id. Sed id justo nec urna dignissim ultricies. Sed suscipit arcu at nunc viverra efficitur. Etiam ac neque id ante consequat lacinia lobortis eget mauris. Nunc nibh metus, mollis vitae nunc fermentum, facilisis dapibus eros. Sed id ante et nulla condimentum vestibulum. Duis in pulvinar orci.</p>
+            <p>Curabitur semper et augue at laoreet. Phasellus molestie pretium orci quis efficitur. Quisque nisi neque, rutrum non justo vel, aliquam efficitur lacus. Nullam id ornare ex, rutrum porttitor magna. Proin feugiat nibh non lectus facilisis posuere. Ut rhoncus magna id neque pharetra, ac pulvinar justo congue. Duis ac nibh quam. Praesent non urna vestibulum, egestas ipsum at, blandit augue. Donec tincidunt sed velit vitae eleifend. Vestibulum eu malesuada neque.</p>
+            <p>Donec in blandit lectus. Aliquam dictum, ligula id rutrum interdum, quam risus vehicula mi, id pellentesque nulla lectus viverra lectus. In mauris arcu, dignissim eu quam in, sodales vulputate nisi. Suspendisse sed dui et nibh suscipit sagittis. Duis in mattis justo. Etiam ut eros vel massa bibendum posuere. Fusce lacinia diam nibh, id mollis arcu auctor dignissim. Aliquam convallis maximus ex ut efficitur. Donec egestas ultricies tortor, pretium rhoncus massa egestas ut. In sit amet urna at ex maximus accumsan eget in lectus. Phasellus sit amet neque interdum, condimentum risus vitae, malesuada mauris. Mauris nec aliquet urna. Pellentesque ex turpis, laoreet eu vulputate a, rhoncus quis nisl. Ut ut leo sit amet lacus fermentum blandit. </p>
+        </div>
+
+    </body>
+
+</html>

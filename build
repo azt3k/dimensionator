@@ -1,0 +1,4 @@
+#!/bin/bash
+
+OUTPUT=$(uglifyjs dimensionator.js -m -r '$,require,exports')
+echo ";$OUTPUT" > dimensionator.min.js
